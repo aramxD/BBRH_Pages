@@ -1,0 +1,193 @@
+:root{
+    --font-color-primary:rgb(14, 14, 14);
+    --font-color-secondary:rgb(236, 236, 236);
+    --background-color-primary:rgb(236, 236, 236);
+    --background-color-secondary:rgb(0, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* Header */
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: var(--background-color-secondary);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: ease-in-out .5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+     
+    align-items: center;
+}
+
+nav .logo {
+    height: 80px;
+}
+
+nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    transition: ease-in .5s;
+}
+
+.nav .enlaces-header a {
+    color: var(--font-color-secondary);
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* CONTAINERS */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    min-height: calc(100vh - 80px);
+    
+}
+/* ABOUT */
+ 
+#About h2{margin: 50px 0;}
+#About article{
+    display: flex;
+    align-items: center
+}
+#About article h3{
+    margin: 12px 0;
+}
+#About article img{
+    width: 40%;    
+}
+.aboutPart2{
+    height: 100vh;
+    width: 100vw;
+    background: url(./assets/img/beer_neon.jpg) no-repeat left   ;
+    background-size: cover;
+    z-index: 3;
+    overflow-x: hidden;
+}
+svg{
+    width: 100vw;
+}
+.aboutUs_subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    width: 280px;
+    height: 320px;
+
+    padding: 30px;
+    margin: 25vh 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 0 rgba(255, 255, 255, 0.685);
+}
+
+.aboutUs_subscribe h3{
+    font-size: 30px;
+}
+.aboutUs_subscribe form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ 
+.inputForm input{
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    margin: 12px 0;
+
+
+}
+.aboutUs_subscribe button{
+    height: 30px;
+
+}
+
+ #Values{
+    
+    width: 100vw;
+    height: 100vh;
+    background: url(./assets/img/refreshing_ncum.png) center no-repeat;
+ }
+ .valuesTitle{
+    width: 250px;
+    height: 80px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+ }
+ .valuesTitle:hover{
+    background-color: rgb(255, 255, 255);
+ }
+.valuesList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;justify-content: center
+}
+ .valuesList .valuesCard{
+        width: 250px;
+        height: 100px;
+        margin: 20px;
+        padding: 20px;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.541);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+    
+ }
+ .valuesList .valuesCard:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+ }
+ .valuesList .valuesCard:active{
+    background-color: rgb(255, 255, 255);
+ }
+ .valuesList .valuesCard h3{
+    margin: 0 0 10px 0;
+ }
+
+/* 
+ TeamMembers */
+
+
+
