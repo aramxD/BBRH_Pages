@@ -88,7 +88,7 @@ async function carrersList(API_URL) {
       const jobButton = document.createElement("button");
       jobButton.innerHTML = `Apply Now`;
       jobButton.value = element.id;
-      jobButton.className = "jobButton";
+      jobButton.className = "jobButton buttonPrimary";
       jobOffer.appendChild(jobButton);
 
       jobButton.onclick = () => {

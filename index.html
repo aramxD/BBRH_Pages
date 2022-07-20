@@ -20,9 +20,9 @@
         <div class="enlaces-header">
           <a href="#About">About</a>
           <a href="#Values">Values</a>
+          <a href="#Mission">Mission</a>
           <a href="#TeamMembers">Team Members</a>
           <a href="#Jobs">Jobs</a>
-          <a href="#Mission">Mission</a>
         </div>
       </section>
     </nav>
@@ -85,7 +85,7 @@
               <label for="email">Email:</label>
               <input type="email" placeholder="example@example.com">
             </div>
-            <button type="submit"> Submit </button>
+            <button type="submit" class="buttonSecondary"> Submit </button>
           </form>
         </div>
       </div>
@@ -95,6 +95,7 @@
         </path>
       </svg>
     </section>
+
     <section id="Values" class="container">
       <h2 class="valuesTitle">Our Values</h2>
       <div class="valuesList">
@@ -133,6 +134,12 @@
       </div>
       </div>
     </section>
+    
+    <section id="Mission" class="container">
+      <h3>Mission</h3>  
+        <p>With each beer we deliver we remember our commitment to craftsmanship, innovation, and education to make our partners, patrons, and community proud 🍻</p>
+    </section>
+
     <section id="TeamMembers" class="container">
       <h2>Team Members</h2>
       <div id='teamMemberList' class="teamMemberList">
@@ -147,20 +154,21 @@
 
       </div>
     </section>
+
     <section id="Jobs" class="container">
       <div class="jobsText">
-      <h2>Join us</h2>
+      <h2>Join us -</h2>
       <p>Let's do clever things together! Are you up for it? Let us know!  </p>
     </div> 
       <div class="jobsList" id="jobsList">
-      <details>
+      <!-- <details>
         <summary>
             <h3>SOy el titulo del trabajo</h3>
         </summary>
         <div>
         <p>soy la descripcion del trabajo ofertado para esta plaza</p>
         <p>posted:<i>14days ago</i></p></div>
-      </details>
+      </details> -->
 
 
     </div>
@@ -176,13 +184,38 @@
       <input id="linkedIn" type="url" pattern="/*linkedin*/" size="30" required>
       <label for="portfolio">Portfolio Url</label>
       <input id="portfolio" type="url">
-      <button id="applyButton" type="button">Apply Job</button>
+      <button id="applyButton" type="button" class="buttonSecondary">Apply Job</button>
     </form>
     </div>
     </section>
-    <section id="Mission" class="container">somos le mission</section>
-  </main>
 
+    
+
+     
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="contact-us">
+            <a href="https://www.juliosantacruz.dev">
+              <img src="./assets/logo/logo_450x200_azul_trans.png" alt="">
+            </a>
+        </div>
+
+        <div class="social-media">
+            <a href="#" class="social-media-icon">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="#" class="social-media-icon">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" class="social-media-icon">
+                <i class='bx bxl-instagram'></i>
+            </a>
+
+        </div>
+
+    </div>
+</footer>
 
   <script src="./js/main.js"></script>
    
