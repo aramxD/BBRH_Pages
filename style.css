@@ -3,8 +3,13 @@
   --font-color-secondary: rgb(236, 236, 236);
   --background-color-primary: rgb(236, 236, 236);
   --background-color-secondary: rgb(0, 0, 0);
+  --size-title: 26px;
+  --size-subtitle:22px;
+  --size-parrafo:18px;
+} 
+html{
+  scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +29,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--size-parrafo );
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -38,7 +43,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: var(--size-parrafo );
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -50,6 +55,11 @@ input {
 }
 label {
   margin-top: 10px;
+  font-size: var(--size-parrafo);
+}
+
+.ghost{
+  display: none;
 }
 /* Header */
 
@@ -94,6 +104,7 @@ nav .logo img {
 
 .nav .enlaces-header a {
   color: var(--font-color-secondary);
+  font-size: var(--size-parrafo);
   text-decoration: none;
   margin: 0 20px;
 }
@@ -107,12 +118,18 @@ nav .logo img {
   align-items: center;
   margin: 0 auto;
   width: 80%;
+  max-width: 1000px;
   height: 100%;
   min-height: calc(100vh - 80px);
+}
+.container_full{
+  width: 100vw;
+  max-width: 100vw;
 }
 /* ABOUT */
 
 #About h2 {
+  font-size: var(--size-title);
   margin: 50px 0;
 }
 #About article {
@@ -120,6 +137,11 @@ nav .logo img {
   align-items: center;
 }
 #About article h3 {
+  font-size: var(--size-subtitle);
+  margin: 12px 0;
+}
+#About article p {
+  font-size: var(--size-parrafo);
   margin: 12px 0;
 }
 #About article img {
@@ -130,8 +152,12 @@ nav .logo img {
   width: 100vw;
   background: url(./assets/img/beer_neon.jpg) no-repeat left;
   background-size: cover;
+  
   z-index: 3;
   overflow-x: hidden;
+}
+.aboutPart2 p{
+  font-size: var(--size-parrafo);
 }
 svg {
   width: 100vw;
@@ -143,7 +169,7 @@ svg {
   align-items: center;
   float: left;
   width: 280px;
-  height: 320px;
+  height: 380px;
 
   padding: 30px;
   margin: 25vh 10%;
@@ -153,6 +179,7 @@ svg {
 }
 
 .aboutUs_subscribe h3 {
+  font-size: var(--size-subtitle);
   font-size: 30px;
 }
 .aboutUs_subscribe form {
@@ -171,14 +198,6 @@ svg {
   height: 30px;
 }
 
-/* MISION */
-#Mission{
-    margin: 50px auto;
-}
-#Mission h3{
-    width: 100%;
-    text-align: left;
-}
 
 
 /* VALUES */
@@ -186,22 +205,26 @@ svg {
   width: 100vw;
   height: 100vh;
   background: url(./assets/img/refreshing_ncum.png) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .valuesTitle {
+  font-size: var(--size-title);
   width: 250px;
   height: 80px;
   margin: 20px;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 255, 255, 0.87);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 .valuesTitle:hover {
   background-color: rgb(255, 255, 255);
 }
+
 .valuesList {
   display: flex;
   flex-direction: row;
@@ -210,7 +233,7 @@ svg {
 }
 .valuesList .valuesCard {
   width: 250px;
-  height: 100px;
+  height: 120px;
   margin: 20px;
   padding: 20px;
   backdrop-filter: blur(16px) saturate(180%);
@@ -227,12 +250,34 @@ svg {
   background-color: rgb(255, 255, 255);
 }
 .valuesList .valuesCard h3 {
+  font-size: var(--size-subtitle);
   margin: 0 0 10px 0;
 }
+.valuesList .valuesCard p {
+  font-size: var(--size-parrafo);
+  margin: 0 0 10px 0;
+}
+/* MISION */
+#Mission{
+    margin: 50px auto;
+}
+#Mission h3{
+  font-size: var(--size-subtitle);
+  margin: 10px 0;
+    width: 100%;
+    text-align: left;
+} 
 
+#Mission p{
+  margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    font-size: var(--size-parrafo);
+}
 /* 
  TeamMembers */
 #TeamMembers h2 {
+  font-size: var(--size-title);
   margin: 30px 0;
 }
 .teamMemberList {
@@ -242,14 +287,29 @@ svg {
   justify-content: space-evenly;
   width: 100%;
 }
+.departStaff{
+  width: 30%;
+   
+}
+
+.departStaff h3{
+  width: 100%;
+   margin: 20px 0;
+  text-align: center;
+  font-size: var(--size-subtitle);
+}
+.departStaff p {
+  font-size: var(--size-parrafo);
+  text-align: center;
+}
 .teamCard {
   display: flex;
   flex-direction: row;
 
   align-items: center;
   margin: 15px 0;
-  width: 38%;
-  max-width: 260px;
+  width: 100%;
+  max-width: 360px;
   min-width: 200px;
   border-radius: 45px;
   background: #ffffff;
@@ -270,6 +330,10 @@ svg {
   margin-left: 30px;
   width: 130px;
 }
+.teamInfo {
+  margin-left: 0px;
+  width: 130px;
+}
 
 /* CARRER */
 #Jobs {
@@ -279,11 +343,13 @@ svg {
   width: 80%;
 }
 .jobsText h2 {
-  margin: 30px 0;
+  font-size: var(--size-title);
+  margin: 20px 0 0;
 }
 .jobsText p {
-  margin: 30px 0;
+  margin: 10px 0;
   font-style: italic;
+  font-size: var(--size-parrafo);
 }
 
 .jobsList {
@@ -303,7 +369,11 @@ details > summary {
   list-style: none;
 }
 details h3 {
+  font-size: var(--size-subtitle);
   margin: 10px 0;
+}
+details p{
+  font-size: var(--size-parrafo);
 }
 details[open] {
   padding: 0.5em;
@@ -354,6 +424,7 @@ details .jobButton {
 
 footer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 80px;
@@ -367,4 +438,50 @@ footer {
 
 footer img {
   height: 60px;
+   
+}
+.contact-us{
+  margin: 0 30px;
+}
+.social-media {
+  /* width: 50%; */
+  margin: 0 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #eb9d21;
+  border-radius: 50%;
+  text-align: center;
+  color:  #eb9d21 ;
+}
+
+.social-media-icon:hover {
+  background:#eb9d21 ;
+  color: var(--background-color-secondary);
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+@media screen and (max-width:800px){
+
+
+}
+
+@media screen and (max-width:800px){
+
+  
+}
+
+@media screen and (max-width:800px){
+
+  
 }

@@ -1,3 +1,4 @@
+AOS.init();
 const STAFF_URL = "https://le-restapi-test.herokuapp.com/api/v1/staff";
 const JOBS_URL = "https://le-restapi-test.herokuapp.com/api/v1/jobs";
 
@@ -54,7 +55,7 @@ async function staffList(API_URL) {
         //Staff Data
         const teamInfo = document.createElement("div");
         teamInfo.className = "teamInfo";
-        teamInfo.innerHTML = `<h3>${element.name}</h3><p>${element.title}</p>`;
+        teamInfo.innerHTML = `<p>${element.name}</p>`;
 
         card.appendChild(teamInfo);
       });
