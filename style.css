@@ -228,3 +228,78 @@ box-shadow:  -7px 7px 20px #919191,
     width: 130px;
 }
 
+/* CARRER */
+#Jobs{
+    margin: 30px auto;
+}
+.jobsText{
+    width: 80%;
+}
+.jobsText h2 {
+    margin: 30px 0; 
+}
+.jobsText p {
+    margin: 30px 0;
+    font-style: italic; 
+}
+
+.jobsList{
+    width: 80%;
+}
+ details{
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    height: 50px;
+    box-shadow:  -7px 7px 20px #919191,
+             7px -7px 20px #ffffff;
+ }
+details > summary {
+    list-style: none;
+    }
+    details[open] {
+        padding: .5em;
+    }
+    
+    details[open] summary {
+        border-bottom: 1px solid #aaa;
+        margin-bottom: .5em;
+    }
+/* FORM DATA  */
+
+.jobFormCard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    max-width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    /* background-image: linear-gradient(135deg, #4b5ca7 0%rgb(118, 75, 162)a2 100%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.719);
+    z-index: 2;
+}
+
+.spread {
+    transform: translate(0);
+}
+
+.jobForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 90%;
+    margin: auto 0;
+    z-index: 3;
+    background-color: transparent;
+}

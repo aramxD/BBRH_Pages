@@ -147,18 +147,45 @@
 
       </div>
     </section>
-    <section id="Jobs">
-      Soy lista de jobs AQUI HAY UN API GET
+    <section id="Jobs" class="container">
+      <div class="jobsText">
+      <h2>Join us</h2>
+      <p>Let's do clever things together! Are you up for it? Let us know!  </p>
+    </div> 
+      <div class="jobsList" id="jobsList">
+      <details>
+        <summary>
+            <h3>SOy el titulo del trabajo</h3>
+        </summary>
+        <div>
+        <p>soy la descripcion del trabajo ofertado para esta plaza</p>
+        <p>posted:<i>14days ago</i></p></div>
+      </details>
 
-      <article class="jobsCard">soy la tarjeta del trabajo :D</article>
-      <article class="jobsCard">soy la tarjeta del trabajo :D</article>
-      <article class="jobsCard">soy la tarjeta del trabajo :D</article>
+
+    </div>
+    <div class="jobFormCard" id="jobFormCard">
+    <form action="." class="jobForm " id="jobForm">
+      <div id="formTitle"></div>
+      <div id="formError"></div>
+      <label for="name">Full Name</label>
+      <input id="name" type="text" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" required>
+      <label for="linkedIn">Linked In Url</label>
+      <input id="linkedIn" type="url" pattern="/*linkedin*/" size="30" required>
+      <label for="portfolio">Portfolio Url</label>
+      <input id="portfolio" type="url">
+      <button id="applyButton" type="button">Apply Job</button>
+    </form>
+    </div>
     </section>
-    <section id="Mission">somo le mission</section>
+    <section id="Mission" class="container">somos le mission</section>
   </main>
 
 
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
+   
 </body>
 
 </html>
