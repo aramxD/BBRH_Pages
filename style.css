@@ -9,6 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -581,6 +582,11 @@ footer img {
   .jobFormCard {
     width: 100%;
   }
+  .social-media-icon {
+     
+    margin-left: 10px;
+     
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -638,11 +644,14 @@ footer img {
     height: 90px;
   }
   .social-media {
-    width: 50%;
-    margin: 0;
+    
+    margin: 0 20px;
     justify-content: flex-start;
   }
   footer img {
     height: 50px;
+  }
+  .contact-us{
+    margin: 0 15px;
   }
 }
