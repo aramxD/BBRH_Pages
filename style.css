@@ -127,7 +127,7 @@ nav .logo img {
   width: 100vw;
   max-width: 100vw;
 }
-/* ABOUT */
+/* ABOUT */ 
 
 #About h2 {
   font-size: var(--size-title);
@@ -149,7 +149,7 @@ nav .logo img {
   width: 40%;
 }
 .aboutPart2 {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   background: url(./assets/img/beer_neon.jpg) no-repeat left;
   background-size: cover;
@@ -521,6 +521,13 @@ footer img {
 }
 
 @media screen and (max-width: 800px) {
+  /* ABOUT */
+  .aboutPart2 {
+    
+    background-size: cover;
+    background-position: right;
+    
+  }
   /* TEAM MEMBERS */
   .departStaff {
     width: 30%;
