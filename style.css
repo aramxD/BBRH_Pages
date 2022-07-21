@@ -310,7 +310,7 @@ svg {
   margin: 15px 0;
   width: 100%;
   max-width: 360px;
-  min-width: 200px;
+  
   border-radius: 45px;
   background: #ffffff;
   box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
@@ -327,13 +327,10 @@ svg {
   object-fit: cover;
 }
 .teamCard .teamInfo {
-  margin-left: 30px;
-  width: 130px;
+  margin-left: 0;
+  width: 100%;
 }
-.teamInfo {
-  margin-left: 0px;
-  width: 130px;
-}
+ 
 
 /* CARRER */
 #Jobs {
@@ -396,7 +393,7 @@ details .jobButton {
   max-width: 300px;
   height: 100%;
   background-color: #ffffff;
-  /* background-image: linear-gradient(135deg, #4b5ca7 0%rgb(118, 75, 162)a2 100%); */
+  /* background-image: linear-gradient(135deg, #4b5ca7 0%rgb(118, 75, 162) 100%); */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -453,8 +450,8 @@ footer img {
 .social-media-icon {
   display: inline-block;
   margin-left: 20px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #eb9d21;
   border-radius: 50%;
   text-align: center;
@@ -464,24 +461,152 @@ footer img {
 .social-media-icon:hover {
   background:#eb9d21 ;
   color: var(--background-color-secondary);
+  /* box-shadow: -2px 2px 4px #b8760d, 2px -2px 4px #ffba4b; */
 }
 
 .social-media-icon i {
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+@media screen and (max-width:900px){
+  :root { 
+    --size-title: 24px;
+    --size-subtitle:20px;
+    --size-parrafo:16px;
+  } 
+  /* NAVBAR */
+  .nav .enlaces-header a {
+    margin: 0 15px;
+  }
+  /* VALUES */
+  .valuesTitle {
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    padding: 25px;
+  }
+  .valuesList .valuesCard {
+    width: 220px;
+    height: 110px;
+    margin: 20px;
+    padding: 20px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
+  /* TEAM MEMBERS */
+  .departStaff{
+    width: 30%;
+  }
+  .teamCard {
+    margin: 20px 0;
+    width: 100%;
+    
+    border-radius: 45px;
+    background: #ffffff;
+    box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
+  }
+  .imgCard {
+    width: 80px;
+    height: 80px;
+    
+  }
+  .teamCard img {
+    width: 80px;
+    height: 80px;
+   
+  }
+  .teamCard .teamInfo {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:800px){
-
-
+/* TEAM MEMBERS */
+.departStaff{
+  width: 30%;
 }
-
-@media screen and (max-width:800px){
-
+.teamCard {
+  margin: 20px 0;
+  width: 100%;
+   
+  border-radius: 45px;
+  background: #ffffff;
+  box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
+}
+.imgCard {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.teamCard img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.teamCard .teamInfo {
+  margin-left: 0;
+  width: 100%;
+}
   
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:600px){
+  :root { 
+    --size-title: 22px;
+    --size-subtitle:18px;
+    --size-parrafo:14px;
+  } 
+  .container{
+    width: 90%;
+  }
+  #About h2 {
+    
+    margin: 30px 0;
+  }
+    /* VALUES */
+    
+    
+    .valuesList .valuesCard {
+      width: 200px;
+      height: 80px;
+      margin: 10px;
+      padding: 10px;
+    }
+    .valuesList .valuesCard h3{
+      margin: 0 0 5px 0;
+    }
+    .departStaff{
+      width: 45%;
+    }
+    .jobFormCard{
+      width: 100%;
+    }
+}
 
+@media screen and (max-width:480px){
   
+    
+    
+
+.departStaff{
+  width: 80%;
+}
+
+.imgCard {
+  width: 90px;
+  height: 90px;
+  
+}
+.teamCard img {
+  width: 90px;
+  height: 90px;
+ 
+}
 }
