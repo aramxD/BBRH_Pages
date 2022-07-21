@@ -4,10 +4,10 @@
   --background-color-primary: rgb(236, 236, 236);
   --background-color-secondary: rgb(0, 0, 0);
   --size-title: 26px;
-  --size-subtitle:22px;
-  --size-parrafo:18px;
-} 
-html{
+  --size-subtitle: 22px;
+  --size-parrafo: 18px;
+}
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -29,7 +29,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: var(--size-parrafo );
+  font-size: var(--size-parrafo);
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -43,7 +43,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: var(--size-parrafo );
+  font-size: var(--size-parrafo);
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -58,7 +58,7 @@ label {
   font-size: var(--size-parrafo);
 }
 
-.ghost{
+.ghost {
   display: none;
 }
 /* Header */
@@ -122,7 +122,7 @@ nav .logo img {
   height: 100%;
   min-height: calc(100vh - 80px);
 }
-.container_full{
+.container_full {
   width: 100vw;
   max-width: 100vw;
 }
@@ -152,11 +152,11 @@ nav .logo img {
   width: 100vw;
   background: url(./assets/img/beer_neon.jpg) no-repeat left;
   background-size: cover;
-  
+
   z-index: 3;
   overflow-x: hidden;
 }
-.aboutPart2 p{
+.aboutPart2 p {
   font-size: var(--size-parrafo);
 }
 svg {
@@ -197,8 +197,6 @@ svg {
 .aboutUs_subscribe button {
   height: 30px;
 }
-
-
 
 /* VALUES */
 #Values {
@@ -258,21 +256,21 @@ svg {
   margin: 0 0 10px 0;
 }
 /* MISION */
-#Mission{
-    margin: 50px auto;
+#Mission {
+  margin: 50px auto;
 }
-#Mission h3{
+#Mission h3 {
   font-size: var(--size-subtitle);
   margin: 10px 0;
-    width: 100%;
-    text-align: left;
-} 
+  width: 100%;
+  text-align: left;
+}
 
-#Mission p{
+#Mission p {
   margin: 10px 0;
-    width: 100%;
-    text-align: left;
-    font-size: var(--size-parrafo);
+  width: 100%;
+  text-align: left;
+  font-size: var(--size-parrafo);
 }
 /* 
  TeamMembers */
@@ -287,14 +285,13 @@ svg {
   justify-content: space-evenly;
   width: 100%;
 }
-.departStaff{
+.departStaff {
   width: 30%;
-   
 }
 
-.departStaff h3{
+.departStaff h3 {
   width: 100%;
-   margin: 20px 0;
+  margin: 20px 0;
   text-align: center;
   font-size: var(--size-subtitle);
 }
@@ -310,7 +307,7 @@ svg {
   margin: 15px 0;
   width: 100%;
   max-width: 360px;
-  
+
   border-radius: 45px;
   background: #ffffff;
   box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
@@ -330,7 +327,6 @@ svg {
   margin-left: 0;
   width: 100%;
 }
- 
 
 /* CARRER */
 #Jobs {
@@ -369,7 +365,7 @@ details h3 {
   font-size: var(--size-subtitle);
   margin: 10px 0;
 }
-details p{
+details p {
   font-size: var(--size-parrafo);
 }
 details[open] {
@@ -435,9 +431,8 @@ footer {
 
 footer img {
   height: 60px;
-   
 }
-.contact-us{
+.contact-us {
   margin: 0 30px;
 }
 .social-media {
@@ -455,11 +450,11 @@ footer img {
   border: 1px solid #eb9d21;
   border-radius: 50%;
   text-align: center;
-  color:  #eb9d21 ;
+  color: #eb9d21;
 }
 
 .social-media-icon:hover {
-  background:#eb9d21 ;
+  background: #eb9d21;
   color: var(--background-color-secondary);
   /* box-shadow: -2px 2px 4px #b8760d, 2px -2px 4px #ffba4b; */
 }
@@ -469,12 +464,12 @@ footer img {
   line-height: 40px;
 }
 
-@media screen and (max-width:900px){
-  :root { 
+@media screen and (max-width: 900px) {
+  :root {
     --size-title: 24px;
-    --size-subtitle:20px;
-    --size-parrafo:16px;
-  } 
+    --size-subtitle: 20px;
+    --size-parrafo: 16px;
+  }
   /* NAVBAR */
   .nav .enlaces-header a {
     margin: 0 15px;
@@ -499,13 +494,13 @@ footer img {
   }
 
   /* TEAM MEMBERS */
-  .departStaff{
+  .departStaff {
     width: 30%;
   }
   .teamCard {
     margin: 20px 0;
     width: 100%;
-    
+
     border-radius: 45px;
     background: #ffffff;
     box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
@@ -513,12 +508,10 @@ footer img {
   .imgCard {
     width: 80px;
     height: 80px;
-    
   }
   .teamCard img {
     width: 80px;
     height: 80px;
-   
   }
   .teamCard .teamInfo {
     margin-left: 0;
@@ -526,87 +519,130 @@ footer img {
   }
 }
 
-@media screen and (max-width:800px){
-/* TEAM MEMBERS */
-.departStaff{
-  width: 30%;
-}
-.teamCard {
-  margin: 20px 0;
-  width: 100%;
-   
-  border-radius: 45px;
-  background: #ffffff;
-  box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
-}
-.imgCard {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.teamCard img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.teamCard .teamInfo {
-  margin-left: 0;
-  width: 100%;
-}
-  
+@media screen and (max-width: 800px) {
+  /* TEAM MEMBERS */
+  .departStaff {
+    width: 30%;
+  }
+  .teamCard {
+    margin: 20px 0;
+    width: 100%;
+
+    border-radius: 45px;
+    background: #ffffff;
+    box-shadow: -7px 7px 20px #919191, 7px -7px 20px #ffffff;
+  }
+  .imgCard {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .teamCard img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .teamCard .teamInfo {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:600px){
-  :root { 
+@media screen and (max-width: 600px) {
+  :root {
     --size-title: 22px;
-    --size-subtitle:18px;
-    --size-parrafo:14px;
-  } 
-  .container{
+    --size-subtitle: 18px;
+    --size-parrafo: 14px;
+  }
+  .nav .enlaces-header a {
+    margin: 0 5px;
+  }
+  .container {
     width: 90%;
   }
   #About h2 {
-    
     margin: 30px 0;
   }
-    /* VALUES */
-    
-    
-    .valuesList .valuesCard {
-      width: 200px;
-      height: 80px;
-      margin: 10px;
-      padding: 10px;
-    }
-    .valuesList .valuesCard h3{
-      margin: 0 0 5px 0;
-    }
-    .departStaff{
-      width: 45%;
-    }
-    .jobFormCard{
-      width: 100%;
-    }
+  /* VALUES */
+
+  .valuesList .valuesCard {
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .valuesList .valuesCard h3 {
+    margin: 0 0 5px 0;
+  }
+  .departStaff {
+    width: 45%;
+  }
+  .jobFormCard {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width:480px){
-  
-    
-    
+@media screen and (max-width: 480px) {
+  /* NAV */
+  nav{
+    height: 100px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .nav .enlaces-header a {
+    margin: 0 5px;
+  }
+  nav .logo {
+    height: 60px;
+  }
 
-.departStaff{
-  width: 80%;
-}
+  /* VALUES */
+  .valuesTitle {
+    width: 80%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px;
+  }
 
-.imgCard {
-  width: 90px;
-  height: 90px;
-  
-}
-.teamCard img {
-  width: 90px;
-  height: 90px;
- 
-}
+  .valuesList .valuesCard {
+    width: 80%;
+    height: auto;
+    margin: 5px 0;
+    padding: 5px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
+  .valuesList .valuesCard p {
+    margin: 0 0 0 0;
+  }
+
+  .departStaff {
+    width: 80%;
+  }
+
+  .imgCard {
+    width: 90px;
+    height: 90px;
+  }
+  .teamCard img {
+    width: 90px;
+    height: 90px;
+  }
+  .social-media {
+    width: 50%;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  footer img {
+    height: 50px;
+  }
 }
