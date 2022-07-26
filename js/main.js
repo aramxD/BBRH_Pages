@@ -2,6 +2,75 @@ AOS.init();
 const STAFF_URL = "https://le-restapi-test.herokuapp.com/api/v1/staff";
 const JOBS_URL = "https://le-restapi-test.herokuapp.com/api/v1/jobs";
 
+
+
+function createStaffCard(staffData){
+  //Separamos los distintos departamentos de trabajo
+  const depStaff = [];
+  staffData.map((element) => {
+    depStaff.push(element.departement);
+  });
+  //Eliminamos elementos duplicados de array
+  const depStaffFinal = depStaff.reduce((acc, item) => {
+    if (!acc.includes(item)) {
+      acc.push(item);
+    }
+    return acc;
+  }, []);
+  //Organizamos alfabeticamente
+  const sortedDepartments = depStaffFinal.sort();
+  //console.log(sortedDepartments)
+
+  //Staff separeted on departments
+
+  const teamMemberList = document.getElementById("teamMemberList");
+
+  sortedDepartments.map((element) => {
+    const departmentStaff = document.createElement("div");
+    departmentStaff.className = "departStaff";
+    departmentStaff.innerHTML = `<h3>${element}</h3>`;
+    teamMemberList.appendChild(departmentStaff);
+
+    const filterStaff = staffData.filter(
+      (staff) => staff.departement === element
+    );
+    //console.log(filterStaff)
+
+    filterStaff.map((element) => {
+      //console.log(element)
+      const card = document.createElement("article");
+      card.className = "teamCard";
+      departmentStaff.appendChild(card);
+
+      //Staff picture
+      const img = document.createElement("img");
+      img.src = element.profile_photo;
+      img.alt = element.name + " staff member";
+      card.appendChild(img);
+
+      //Staff Data
+      const teamInfo = document.createElement("div");
+      teamInfo.className = "teamInfo";
+      teamInfo.innerHTML = `<p>${element.name}</p>`;
+
+      card.appendChild(teamInfo);
+    });
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 async function staffList(API_URL) {
   const response = await fetch(API_URL);
   const staffData = await response.json();
@@ -9,57 +78,7 @@ async function staffList(API_URL) {
   if (response.status !== 200) {
     console.log(response.status + staffData.message);
   } else {
-    //Separamos los distintos departamentos de trabajo
-    const depStaff = [];
-    staffData.map((element) => {
-      depStaff.push(element.departement);
-    });
-    //Eliminamos elementos duplicados de array
-    const depStaffFinal = depStaff.reduce((acc, item) => {
-      if (!acc.includes(item)) {
-        acc.push(item);
-      }
-      return acc;
-    }, []);
-    //Organizamos alfabeticamente
-    const sortedDepartments = depStaffFinal.sort();
-    //console.log(sortedDepartments)
-
-    //Staff separeted on departments
-
-    const teamMemberList = document.getElementById("teamMemberList");
-
-    sortedDepartments.map((element) => {
-      const departmentStaff = document.createElement("div");
-      departmentStaff.className = "departStaff";
-      departmentStaff.innerHTML = `<h3>${element}</h3>`;
-      teamMemberList.appendChild(departmentStaff);
-
-      const filterStaff = staffData.filter(
-        (staff) => staff.departement === element
-      );
-      //console.log(filterStaff)
-
-      filterStaff.map((element) => {
-        //console.log(element)
-        const card = document.createElement("article");
-        card.className = "teamCard";
-        departmentStaff.appendChild(card);
-
-        //Staff picture
-        const img = document.createElement("img");
-        img.src = element.profile_photo;
-        img.alt = element.name + " staff member";
-        card.appendChild(img);
-
-        //Staff Data
-        const teamInfo = document.createElement("div");
-        teamInfo.className = "teamInfo";
-        teamInfo.innerHTML = `<p>${element.name}</p>`;
-
-        card.appendChild(teamInfo);
-      });
-    });
+    createStaffCard(staffData)
   }
 }
 

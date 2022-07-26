@@ -11,3 +11,4 @@ The steps to run this project are:
  2. Open index.html file with a local development server (live server recommended --> [Download Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer))
  
 It is important to run this project from localhost (127.0.0.1), you can use ports '3000', '5500' or '8000' for the correct connection with the backend.
+
